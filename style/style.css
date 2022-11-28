@@ -9,10 +9,10 @@
 
 
 :root{
-    --blue:#2196F3;
-    --black:#212121;
-    --grey:#757575;
-    --greyBg:#F5F4FA;
+    --orange:#FD8558;;
+    --black:#222222;
+    --grey:#F7F7F7;
+    --greyTwo:#CACACA;
     --blackBg:#2F303A;
     --bgSection:#F5F5F5;
 }
@@ -23,26 +23,52 @@ img{
     display: block;
 }
 
-
+body{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.003em;
+    font-style: normal;
+}
 .header {
 }
 .container {
     width: 1440px;
     margin: 0 auto;
-    display: flex;
 }
-.logo-container {
-}
+.row-container{display: flex; justify-content: center; align-items: baseline;}
+.logo-container {margin-right: auto; }
+.spike{width: 22px;height: 20px;background-color: transparent;margin-left: auto;}
+
 .logo {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.607;
+    letter-spacing: 1.1px;
+    text-transform: lowercase;
+    color: var(--black);
 }
 .nav {
 }
 .ul-row {
     display: flex;
+    gap: 30px;
 }
 .list-comtainer {
 }
 .nav-link {
+    display: block;
+    padding: 27px 0 45px 0;
+    font-size: 15px;
+    line-height: 0.0666;
+    /* identical to box height, or 9% */
+    letter-spacing: 0.2px;
+    text-transform: lowercase;
+    color: var(--black);
+}
+.active{
+    color: var(--orange);
+}
+.nav-link:hover{
+    color: var(--orange);
 }
 .main {
 }
